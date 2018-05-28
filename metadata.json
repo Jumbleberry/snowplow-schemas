@@ -1,7 +1,13 @@
 {
+    "description": "Campaign metadata",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "metadata",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
     "type": "object",
     "title": "metadata",
-    "description": "Campaign metadata",
     "properties": {
         "affiliate_id": {
             "type": "string"
@@ -18,5 +24,6 @@
     },
     "required": [
         "affiliate_id"
-    ]
+    ],
+    "additionalProperties": false
 }
