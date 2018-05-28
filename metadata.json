@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "title": "metadata",
+    "description": "Campaign metadata",
+    "properties": {
+        "affiliate_id": {
+            "type": "string"
+        },
+        "c1": {
+            "type": "string"
+        },
+        "c2": {
+            "type": "string"
+        },
+        "c3": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "affiliate_id"
+    ]
+}
