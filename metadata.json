@@ -9,9 +9,6 @@
     "type": "object",
     "title": "metadata",
     "properties": {
-        "affiliate_id": {
-            "type": "string"
-        },
         "campaign_id": {
             "type": "string"
         },
@@ -19,15 +16,6 @@
             "type": "string"
         },
         "trans_id": {
-            "type": "string"
-        },
-        "c1": {
-            "type": "string"
-        },
-        "c2": {
-            "type": "string"
-        },
-        "c3": {
             "type": "string"
         }
     }
