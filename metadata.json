@@ -12,6 +12,15 @@
         "affiliate_id": {
             "type": "string"
         },
+        "campaign_id": {
+            "type": "string"
+        },
+        "hit_id": {
+            "type": "string"
+        },
+        "trans_id": {
+            "type": "string"
+        },
         "c1": {
             "type": "string"
         },
@@ -21,9 +30,5 @@
         "c3": {
             "type": "string"
         }
-    },
-    "required": [
-        "affiliate_id"
-    ],
-    "additionalProperties": false
+    }
 }
