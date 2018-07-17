@@ -1,0 +1,27 @@
+{
+    "description": "Upsell from advertisers",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "upsell",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "upsell",
+    "properties": {
+        "trans_id": {
+            "type": "string"
+        },
+        "max_value": {
+            "type": "number",
+            "minimum": 0
+        },
+        "total_value": {
+            "type": "number",
+            "minimum": 0
+        },
+        "billing_cycle": {
+            "type": "number"
+        }
+    }
+}

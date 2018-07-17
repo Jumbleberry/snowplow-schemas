@@ -1,0 +1,23 @@
+{
+    "description": "Transaction decline",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "decline",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "decline",
+    "properties": {
+        "trans_id": {
+            "type": "string"
+        },
+        "value": {
+            "type": "number",
+            "minimum": 0
+        },
+        "reason": {
+            "type": "string"
+        }
+    }
+}

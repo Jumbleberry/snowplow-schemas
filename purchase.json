@@ -1,0 +1,27 @@
+{
+    "description": "Purchase transaction",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "purchase",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "purchase",
+    "properties": {
+        "trans_id": {
+            "type": "string"
+        },
+        "max_value": {
+            "type": "number",
+            "minimum": 0
+        },
+        "total_value": {
+            "type": "number",
+            "minimum": 0
+        },
+        "billing_cycle": {
+            "type": "number"
+        }
+    }
+}
