@@ -9,7 +9,7 @@
     "type": "object",
     "title": "decline",
     "properties": {
-        "trans_id": {
+        "hit_id": {
             "type": "string"
         },
         "value": {

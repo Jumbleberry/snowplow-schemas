@@ -9,6 +9,9 @@
     "type": "object",
     "title": "purchase",
     "properties": {
+        "hit_id": {
+            "type": "string"
+        },
         "trans_id": {
             "type": "string"
         },
