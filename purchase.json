@@ -28,7 +28,7 @@
         "contents": {
             "type": "array",
             "items": {
-                "content": [
+                "oneOf": [
                     {
                         "type": "object",
                         "properties": {
