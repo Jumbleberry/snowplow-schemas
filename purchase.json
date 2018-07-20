@@ -7,7 +7,7 @@
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "purchase",
+    "title": "transcation",
     "properties": {
         "hit_id": {
             "type": "string"
