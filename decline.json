@@ -12,6 +12,9 @@
         "hit_id": {
             "type": "string"
         },
+        "trans_id": {
+            "type": "string"
+        },
         "value": {
             "type": "number",
             "minimum": 0
