@@ -4,7 +4,7 @@
         "vendor": "com.jumbleberry",
         "name": "purchase_test",
         "format": "jsonschema",
-        "version": "1-0-0"
+        "version": "draft-04"
     },
     "type": "object",
     "title": "purchase_test",
