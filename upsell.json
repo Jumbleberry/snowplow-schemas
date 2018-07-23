@@ -28,24 +28,20 @@
         "contents": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "type": "object",
-                        "properties": {
-                            "id": {
-                                "type": "string"
-                            },
-                            "quantity": {
-                                "type": "number",
-                                "minimum": 0
-                            },
-                            "item_price": {
-                                "type": "number",
-                                "minimum": 0
-                            }
-                        }
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "quantity": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "item_price": {
+                        "type": "number",
+                        "minimum": 0
                     }
-                ]
+                }
             }
         },
         "billing_cycle": {
