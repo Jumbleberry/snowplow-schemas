@@ -6,6 +6,7 @@
         "format": "jsonschema",
         "version": "draft-04"
     },
+    "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "title": "purchase_test",
     "properties": {
