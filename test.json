@@ -1,13 +1,13 @@
 {
-    "description": "Transaction",
+    "description": "test",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "transaction",
+        "name": "test",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "transaction",
+    "title": "test",
     "properties": {
         "hit_id": {
             "type": "string"
