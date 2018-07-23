@@ -4,9 +4,8 @@
         "vendor": "com.jumbleberry",
         "name": "purchase_test",
         "format": "jsonschema",
-        "version": "draft-04"
+        "version": "1-0-0"
     },
-    "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "title": "purchase_test",
     "properties": {
@@ -29,24 +28,20 @@
         "contents": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "type": "object",
-                        "properties": {
-                            "id": {
-                                "type": "string"
-                            },
-                            "quantity": {
-                                "type": "number",
-                                "minimum": 0
-                            },
-                            "item_price": {
-                                "type": "number",
-                                "minimum": 0
-                            }
-                        }
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "quantity": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "item_price": {
+                        "type": "number",
+                        "minimum": 0
                     }
-                ]
+                }
             }
         },
         "billing_cycle": {
