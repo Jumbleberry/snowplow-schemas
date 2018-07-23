@@ -1,0 +1,55 @@
+{
+    "description": "Purchase transaction test",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "purchase_test",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "purchase_test",
+    "properties": {
+        "hit_id": {
+            "type": "string"
+        },
+        "trans_id": {
+            "type": "string"
+        },
+        "content_type": {
+            "type": "string"
+        },
+        "value": {
+            "type": "number",
+            "minimum": 0
+        },
+        "currency": {
+            "type": "string"
+        },
+        "contents": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "quantity": {
+                                "type": "number",
+                                "minimum": 0
+                            },
+                            "item_price": {
+                                "type": "number",
+                                "minimum": 0
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "billing_cycle": {
+            "type": "number"
+        }
+    }
+}
