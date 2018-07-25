@@ -57,6 +57,9 @@
         },
         "order_index": {
             "type": "number"
+        },
+        "trans_id": {
+            "type": "string"
         }
     }
 }
