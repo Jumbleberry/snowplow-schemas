@@ -1,5 +1,5 @@
 {
-    "description": "Upsell from advertisers",
+    "description": "When a upsell is made from advertisers",
     "self": {
         "vendor": "com.jumbleberry",
         "name": "upsell",
@@ -9,21 +9,28 @@
     "type": "object",
     "title": "upsell",
     "properties": {
-        "hit_id": {
-            "type": "string"
-        },
-        "trans_id": {
-            "type": "string"
-        },
-        "content_type": {
-            "type": "string"
-        },
         "value": {
             "type": "number",
             "minimum": 0
         },
         "currency": {
             "type": "string"
+        },
+        "content_name": {
+            "type": "string"
+        },
+        "content_type": {
+            "type": "string",
+            "enum": [
+                "product",
+                "product_group"
+            ]
+        },
+        "content_ids": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
         },
         "contents": {
             "type": "array",
@@ -44,7 +51,11 @@
                 }
             }
         },
-        "billing_cycle": {
+        "num_items": {
+            "type": "number",
+            "minimum": 0
+        },
+        "order_index": {
             "type": "number"
         }
     }

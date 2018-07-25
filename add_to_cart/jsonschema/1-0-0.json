@@ -1,13 +1,13 @@
 {
-    "description": "When a purchase is made or checkout flow is completed, e.g. landing on thank you/confirmation page",
+    "description": "When a product is added to the shopping cart, e.g. click on add to cart button",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "purchase",
+        "name": "add_to_cart",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "purchase",
+    "title": "add_to_cart",
     "properties": {
         "value": {
             "type": "number",
@@ -50,13 +50,6 @@
                     }
                 }
             }
-        },
-        "num_items": {
-            "type": "number",
-            "minimum": 0
-        },
-        "order_index": {
-            "type": "number"
         }
     }
 }

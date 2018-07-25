@@ -1,13 +1,13 @@
 {
-    "description": "When a purchase is made or checkout flow is completed, e.g. landing on thank you/confirmation page",
+    "description": "When a payment information is added in the checkout flow, e.g. click / LP on save billing info button",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "purchase",
+        "name": "add_payment_info",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "purchase",
+    "title": "add_payment_info",
     "properties": {
         "value": {
             "type": "number",
@@ -16,15 +16,8 @@
         "currency": {
             "type": "string"
         },
-        "content_name": {
+        "content_category": {
             "type": "string"
-        },
-        "content_type": {
-            "type": "string",
-            "enum": [
-                "product",
-                "product_group"
-            ]
         },
         "content_ids": {
             "type": "array",
@@ -50,13 +43,6 @@
                     }
                 }
             }
-        },
-        "num_items": {
-            "type": "number",
-            "minimum": 0
-        },
-        "order_index": {
-            "type": "number"
         }
     }
 }

@@ -1,13 +1,13 @@
 {
-    "description": "When a purchase is made or checkout flow is completed, e.g. landing on thank you/confirmation page",
+    "description": "When a person enters the checkout flow prior to completing the checkout flow, e.g. click on checkout button",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "purchase",
+        "name": "initiate_checkout",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "purchase",
+    "title": "initiate_checkout",
     "properties": {
         "value": {
             "type": "number",
@@ -54,9 +54,6 @@
         "num_items": {
             "type": "number",
             "minimum": 0
-        },
-        "order_index": {
-            "type": "number"
         }
     }
 }

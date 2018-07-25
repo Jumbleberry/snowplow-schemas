@@ -1,0 +1,26 @@
+{
+    "description": "When a sign up is completed, e.g. click on pricing, signup for trial",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "complete_registration",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "complete_registration",
+    "properties": {
+        "value": {
+            "type": "number",
+            "minimum": 0
+        },
+        "currency": {
+            "type": "string"
+        },
+        "content_name": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        }
+    }
+}
