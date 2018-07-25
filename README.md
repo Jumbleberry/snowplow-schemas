@@ -6,15 +6,15 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 
 | Event Name | Event Description | Parameters | 
 | --- | --- | --- |
-| `view_content` | When a key page is viewed such as a product page, e.g. landing on a product detail page | `value`, `currency`, `content_name`, `content_type`, `content_ids`, `contents` |
-`add_to_cart` | When a product is added to the shopping cart, e.g. click on add to cart button | `value`, `currency`, `content_name`, `content_type`, `content_ids`, `contents` |
-`remove_from_cart` | When a product is removed from the shopping cart, e.g. click on add to cart button | `value`, `currency`, `content_name`, `content_type`, `content_ids`, `contents` |
-`initiate_checkout` | When a person enters the checkout flow prior to completing the checkout flow, e.g. click on checkout button | `value`, `currency`, `content_name`, `content_type`, `content_ids`, `contents`, `num_items` |
-`add_payment_info` | When a payment information is added in the checkout flow, e.g. click / LP on save billing info button | `value`, `currency`, `content_category`, `content_ids`, `contents` |
-`purchase` | When a purchase is made or checkout flow is completed, e.g. landing on thank you/confirmation page | `value`, `currency`, `content_name`, `content_type`, `content_ids`, `contents`, `num_items`, `order_index` |
-`upsell` | When a purchase is made on advertisers side | `value`, `currency`, `content_name`, `content_type`, `content_ids`, `contents`, `num_items`, `order_index` |
-`lead` | When a sign up is completed, e.g. click on pricing, signup for trial | `value`, `currency`, `content_name`, `content_category` |
-`complete_registration` | When a registration form is completed, e.g. complete subscription/signup for a service | `value`, `currency`, `content_name`, `status` |
+| `view_content` | When a key page is viewed such as a product page, e.g. landing on a product detail page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
+`add_to_cart` | When a product is added to the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
+`remove_from_cart` | When a product is removed from the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
+`initiate_checkout` | When a person enters the checkout flow prior to completing the checkout flow, e.g. click on checkout button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items` |
+`add_payment_info` | When a payment information is added in the checkout flow, e.g. click / LP on save billing info button | `value`,<br/> `currency`,<br/> `content_category`,<br/> `content_ids`,<br/> `contents` |
+`purchase` | When a purchase is made or checkout flow is completed, e.g. landing on thank you/confirmation page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items`,<br/> `order_index` |
+`upsell` | When a purchase is made on advertisers side | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items`,<br/> `order_index` |
+`lead` | When a sign up is completed, e.g. click on pricing, signup for trial | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_category` |
+`complete_registration` | When a registration form is completed, e.g. complete subscription/signup for a service | `value`,<br/> `currency`,<br/> `content_name`,<br/> `status` |
 
 ## Parameters
 
