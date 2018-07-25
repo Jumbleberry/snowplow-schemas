@@ -27,6 +27,6 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 `content_ids` | Product ids associated with the event. e.g. SKUs of products  for AddToCart event: ['ABC123', 'XYZ789 |
 `contents` | A list of JSON object that contains the International Article Number (EAN) when applicable, or other product or content identifier(s) associated with the event as well as quantities and prices of the products. `id`, `quantity`, and `item_price` are the required fields. e.g. [{'id': 'ABC123', 'quantity': 2, 'item_price': 5.99}, {'id': 'XYZ789', 'quantity': 2, 'item_price': 9.99}]. Note that `item_price` is the price of a single item, not cumulative price |
 `content_type` | Either 'product' or 'product_group' based on the `content_ids` or `contents` being passed. If the ids being passed in `content_ids` or `contents` parameter are ids of products then the value should be 'product'. If product group ids are being passed, then the value should be 'product_group |
-`num_items` | Used with `InitiateCheckout` event. The number of items that checkout was initiated for |
-`status` | Used with the `CompleteRegistration` event, to show the status of the registration |
+`num_items` | Used with `initiate_checkout` event. The number of items that checkout was initiated for |
+`status` | Used with the `complete_registration` event, to show the status of the registration |
 `order_index` | Order index, used as billing cycle at the moment |
