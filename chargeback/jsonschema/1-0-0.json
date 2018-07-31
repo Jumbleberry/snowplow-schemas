@@ -1,13 +1,13 @@
 {
-    "description": "Transaction charge back",
+    "description": "Transaction chargeback",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "charge_back",
+        "name": "chargeback",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "charge_back",
+    "title": "chargeback",
     "properties": {
         "value": {
             "type": "number",
