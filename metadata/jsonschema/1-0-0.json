@@ -17,6 +17,15 @@
         },
         "trans_id": {
             "type": "string"
+        },
+        "c1": {
+            "type": "string"
+        },
+        "c2": {
+            "type": "string"
+        },
+        "c3": {
+            "type": "string"
         }
     }
 }
