@@ -1,0 +1,22 @@
+{
+    "description": "Engagement",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "engagement",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "engagement",
+    "properties": {
+        "c1": {
+            "type": "string"
+        },
+        "c2": {
+            "type": "string"
+        },
+        "c3": {
+            "type": "string"
+        }
+    }
+}
