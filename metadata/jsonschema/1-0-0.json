@@ -18,13 +18,13 @@
         "trans_id": {
             "type": "string"
         },
-        "c1": {
+        "c_1": {
             "type": "string"
         },
-        "c2": {
+        "c_2": {
             "type": "string"
         },
-        "c3": {
+        "c_3": {
             "type": "string"
         }
     }

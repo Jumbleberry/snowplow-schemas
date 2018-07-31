@@ -17,7 +17,7 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 `complete_registration` | When a registration form is completed, e.g. complete subscription/signup for a service | `value`,<br/> `currency`,<br/> `content_name`,<br/> `status` |
 `decline` | When a transaction is declined | `value`,<br/> `currency`,<br/> `reason` |
 `chargeback` | When a transaction is charged back | `value`,<br/> `currency`,<br/> `reason` |
-`metadata` | Campaign metadata | `campaign_id`,<br/> `hit_id`,<br/> `trans_id`,<br/> `c1`, <br/> `c2`, <br/>`c3` |
+`metadata` | Campaign metadata | `campaign_id`,<br/> `hit_id`,<br/> `trans_id`,<br/> `c_1`, <br/> `c_2`, <br/>`c_3` |
 
 
 ## Parameters
@@ -34,6 +34,6 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 `num_items` | Used with `initiate_checkout` event. The number of items that checkout was initiated for |
 `status` | Used with the `complete_registration` event, to show the status of the registration |
 `reason` | Reaons for `decline`, `chargeback` etc. |
-`c1` | Hitpath campaign c1 param |
-`c2` | Hitpath campaign c2 param |
-`c3` | Hitpath campaign c3 param |
+`c_1` | Hitpath campaign c1 param |
+`c_2` | Hitpath campaign c2 param |
+`c_3` | Hitpath campaign c3 param |
