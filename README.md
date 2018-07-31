@@ -15,6 +15,9 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 `upsell` | When a purchase is made on advertisers side | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items`,<br/> `order_index` |
 `lead` | When a sign up is completed, e.g. click on pricing, signup for trial | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_category` |
 `complete_registration` | When a registration form is completed, e.g. complete subscription/signup for a service | `value`,<br/> `currency`,<br/> `content_name`,<br/> `status` |
+`decline` | When a transaction is declined | `value`,<br/> `currency`,<br/> `reason` |
+`chargeback` | When a transaction is charged back | `value`,<br/> `currency`,<br/> `reason` |
+
 
 ## Parameters
 
@@ -30,3 +33,4 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 `num_items` | Used with `initiate_checkout` event. The number of items that checkout was initiated for |
 `status` | Used with the `complete_registration` event, to show the status of the registration |
 `order_index` | Order index, used as billing cycle at the moment |
+`reason` | Reaons for decline, chargebacks etc. |
