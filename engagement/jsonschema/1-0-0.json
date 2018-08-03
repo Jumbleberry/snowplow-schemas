@@ -1,23 +1,14 @@
 {
-    "description": "Campaign metadata",
+    "description": "Bridge page engagement",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "metadata",
+        "name": "engagement",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "metadata",
+    "title": "engagement",
     "properties": {
-        "campaign_id": {
-            "type": "string"
-        },
-        "hit_id": {
-            "type": "string"
-        },
-        "trans_id": {
-            "type": "string"
-        },
         "c_1": {
             "type": "string"
         },
