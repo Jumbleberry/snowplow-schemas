@@ -17,7 +17,6 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 `complete_registration` | When a registration form is completed, e.g. complete subscription/signup for a service | `value`,<br/> `currency`,<br/> `content_name`,<br/> `status` |
 `decline` | When a transaction is declined | `value`,<br/> `currency`,<br/> `reason` |
 `chargeback` | When a transaction is charged back | `value`,<br/> `currency`,<br/> `reason` |
-`metadata` | Campaign metadata | `campaign_id`,<br/> `hit_id`,<br/> `trans_id`,<br/> `c_1`, <br/> `c_2`, <br/>`c_3` |
 
 
 ## Parameters
