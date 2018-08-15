@@ -6,7 +6,7 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 
 | Event Name | Event Description | Parameters | 
 | --- | --- | --- |
-| `engagement` | When a key page is viewed prior to lead generation (ie. Bridge Page) | `c1`,<br/> `c2`,<br/>, `c3` |
+| `engagement` | When a key page is viewed prior to lead generation (ie. Bridge Page) | `c1`,<br/> `c2`,<br/> `c3` |
 | `view_content` | When a key page is viewed such as a product page, e.g. landing on a product detail page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
 `add_to_cart` | When a product is added to the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
 `remove_from_cart` | When a product is removed from the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
