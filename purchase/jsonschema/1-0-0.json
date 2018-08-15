@@ -55,7 +55,7 @@
             "type": "number",
             "minimum": 0
         },
-        "trans_id": {
+        "transaction_id": {
             "type": "string"
         }
     }
