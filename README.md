@@ -6,18 +6,18 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 
 | Event Name | Event Description | Parameters | 
 | --- | --- | --- |
-| `view_content` | When a key page is viewed such as a product page, e.g. landing on a product detail page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
-`add_to_cart` | When a product is added to the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
-`remove_from_cart` | When a product is removed from the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
-`initiate_checkout` | When a person enters the checkout flow prior to completing the checkout flow, e.g. click on checkout button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items` |
-`add_payment_info` | When a payment information is added in the checkout flow, e.g. click / LP on save billing info button | `value`,<br/> `currency`,<br/> `content_category`,<br/> `content_ids`,<br/> `contents` |
-`purchase` | When a purchase is made or checkout flow is completed, e.g. landing on thank you/confirmation page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items` |
-`upsell` | When a purchase is made on advertisers side | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items` |
-`lead` | When a sign up is completed, e.g. click on pricing, signup for trial | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_category` |
-`complete_registration` | When a registration form is completed, e.g. complete subscription/signup for a service | `value`,<br/> `currency`,<br/> `content_name`,<br/> `status` |
-`decline` | When a transaction is declined | `value`,<br/> `currency`,<br/> `reason` |
-`chargeback` | When a transaction is charged back | `value`,<br/> `currency`,<br/> `reason` |
-`metadata` | Campaign metadata | `campaign_id`,<br/> `hit_id`,<br/> `trans_id`,<br/> `c_1`, <br/> `c_2`, <br/>`c_3` |
+| `Engagement` | When a key page is viewed prior to lead generation (ie. Bridge Page) | `c1`,<br/> `c2`,<br/> `c3` |
+`Lead` | When a user has shown interest in the product (ie. Post click) | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_category` |
+| `ViewContent` | When a key page is viewed such as a product page, e.g. landing on a product detail page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
+`AddToCart` | When a product is added to the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
+`RemoveFromCart` | When a product is removed from the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
+`InitiateCheckout` | When a person enters the checkout flow prior to completing the checkout flow, e.g. click on checkout button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items` |
+`AddPaymentInfo` | When a payment information is added in the checkout flow, e.g. click / LP on save billing info button | `value`,<br/> `currency`,<br/> `content_category`,<br/> `content_ids`,<br/> `contents` |
+`Purchase` | When a purchase is made or checkout flow is completed, e.g. landing on thank you/confirmation page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items`,<br/> `transaction_id` |
+`Upsell` | When a secondary purchase is made (not credited back to Jumbleberry) | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items`,<br/> `transaction_id` |
+`CompleteRegistration` | When a registration form is completed, e.g. complete subscription/signup for a service | `value`,<br/> `currency`,<br/> `content_name`,<br/> `status` |
+`Decline` | When a transaction is declined | `value`,<br/> `currency`,<br/> `reason`,<br/> `transaction_id`  |
+`Chargeback` | When a transaction is charged back | `value`,<br/> `currency`,<br/> `reason`,<br/> `transaction_id`  |
 
 
 ## Parameters
@@ -34,6 +34,7 @@ Jumbleberry tracking events are based on [Facebook Custom Audience pixels](https
 `num_items` | Used with `initiate_checkout` event. The number of items that checkout was initiated for |
 `status` | Used with the `complete_registration` event, to show the status of the registration |
 `reason` | Reaons for `decline`, `chargeback` etc. |
-`c_1` | Hitpath campaign c1 param |
-`c_2` | Hitpath campaign c2 param |
-`c_3` | Hitpath campaign c3 param |
+`transaction_id` | A identifier for uniquely identifying a specific transaction attempt |
+`c1` | Publisher sub id #1 |
+`c2` | Publisher sub id #2 |
+`c3` | Publisher sub id #3 |

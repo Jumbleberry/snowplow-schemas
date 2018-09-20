@@ -18,6 +18,9 @@
         },
         "reason": {
             "type": "string"
+        },
+        "transaction_id": {
+            "type": "string"
         }
     }
 }
