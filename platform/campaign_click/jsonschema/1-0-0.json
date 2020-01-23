@@ -1,0 +1,64 @@
+{
+    "description": "when user clicks on a campaign",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "campaign_click",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "campaign_click",
+    "properties": {
+        "campaign_name": {
+            "type": "string"
+        },
+        "campaign_id": {
+            "type": "string"
+        },
+        "vertical_ids": {
+            "type": "array"
+            "items": {
+                "type": "string"
+            }
+        }
+      },
+    
+        "vertical": {
+            "type": "array"
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                   },
+                    "vertical_name": {
+                        "type": "string"
+                   }
+                }   
+             }   
+        },
+        
+        "geo_ids": {
+            "type": "array"
+            "items": {
+                "type": "string"
+            }
+        }
+      },
+    
+        "geo": {
+            "type": "array"
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                   },
+                    "geo_name": {
+                        "type": "string"
+                   }
+                }   
+             }   
+        }
+    }
+}
