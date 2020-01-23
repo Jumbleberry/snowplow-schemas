@@ -1,0 +1,103 @@
+{
+    "description": "schema for individual search criteria found under filter",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "campaign_search",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "search",
+    "properties": {
+        "vertical_ids": {
+            "type": "array"
+            "items": {
+                "type": "string"
+            }
+        }
+      },
+    
+        "vertical": {
+            "type": "array"
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                   },
+                    "vertical_name": {
+                        "type": "string"
+                   }
+                }   
+             }   
+        },
+        
+        "geo_ids": {
+            "type": "array"
+            "items": {
+                "type": "string"
+            }
+        }
+      },
+    
+        "geo": {
+            "type": "array"
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                   },
+                    "geo_name": {
+                        "type": "string"
+                   }
+                }   
+             }   
+        },
+        
+        "feature_ids": {
+            "type": "array"
+            "items": {
+                "type": "string"
+            }
+        }
+      },
+    
+        "features": {
+            "type": "array"
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                   },
+                    "features_name": {
+                        "type": "string"
+                   }
+                }   
+             }   
+        },
+         "refine_name": {
+            "type": "string"
+         },
+         
+         "refine_by": {
+            "type": "array"
+            "items": {
+                "type": "object"
+                "properties": {
+                    "id": {
+                       "type": "string"                       
+                    },
+                    "min_value": {
+                       "type": "string"
+                    },
+                    "max_value": {
+                       "type": "string"
+                    }                    
+                }
+            }
+            
+        }
+    }
+}
