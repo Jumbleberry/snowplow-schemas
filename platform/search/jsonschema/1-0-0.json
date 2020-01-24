@@ -9,95 +9,62 @@
     "type": "object",
     "title": "search",
     "properties": {
-        "vertical_ids": {
-            "type": "array"
-            "items": {
-                "type": "string"
-            }
-        }
-      },
-    
         "vertical": {
-            "type": "array"
-            "items": {
-                "type": "object",
-                "properties": {
+            "type": "object",
+            "properties": {
                     "id": {
-                        "type": "string"
-                   },
+                        "type": "string"                        
+                    },
                     "vertical_name": {
-                        "type": "string"
-                   }
-                }   
-             }   
-        },
-        
-        "geo_ids": {
-            "type": "array"
-            "items": {
-                "type": "string"
+                        "type": "string" 
+                    }
             }
-        }
-      },
-    
-        "geo": {
-            "type": "array"
-            "items": {
-                "type": "object",
-                "properties": {
+        },
+        "country": {
+            "type": "object",
+            "properties": {
                     "id": {
-                        "type": "string"
-                   },
-                    "geo_name": {
-                        "type": "string"
-                   }
-                }   
-             }   
-        },
-        
-        "feature_ids": {
-            "type": "array"
-            "items": {
-                "type": "string"
+                        "type": "string"                        
+                    },
+                    "country_name": {
+                        "type": "string" 
+                    }
             }
-        }
-      },
-    
+        },
         "features": {
-            "type": "array"
-            "items": {
-                "type": "object",
-                "properties": {
+            "type": "object",
+            "properties": {
                     "id": {
-                        "type": "string"
-                   },
+                        "type": "string"                        
+                    },
                     "features_name": {
-                        "type": "string"
-                   }
-                }   
-             }   
-        },
-         "refine_name": {
-            "type": "string"
-         },
-         
-         "refine_by": {
-            "type": "array"
-            "items": {
-                "type": "object"
-                "properties": {
-                    "id": {
-                       "type": "string"                       
-                    },
-                    "min_value": {
-                       "type": "string"
-                    },
-                    "max_value": {
-                       "type": "string"
-                    }                    
-                }
+                        "type": "string" 
+                    }
             }
-            
+        },
+        "refine": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "refine_type": {
+                        "type": "string" 
+                    },
+                    "value": {
+                        "type": "object",
+                        "properties": {
+                                "min": {
+                                    "type": "string"
+                                },
+                                "max": {
+                                    "type": "string"
+                                }
+                        }
+                    }
+                
+            }
         }
+        
     }
 }
