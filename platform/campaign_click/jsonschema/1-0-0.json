@@ -15,50 +15,39 @@
         "campaign_id": {
             "type": "string"
         },
-        "vertical_ids": {
-            "type": "array"
-            "items": {
-                "type": "string"
-            }
-        }
-      },
-    
         "vertical": {
-            "type": "array"
-            "items": {
-                "type": "object",
-                "properties": {
+            "type": "object",
+            "properties": {
                     "id": {
-                        "type": "string"
-                   },
+                        "type": "string"                        
+                    },
                     "vertical_name": {
-                        "type": "string"
-                   }
-                }   
-             }   
+                        "type": "string" 
+                    }
+            }
         },
-        
-        "geo_ids": {
-            "type": "array"
-            "items": {
-                "type": "string"
+        "country": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "country_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "features": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "features_name": {
+                        "type": "string" 
+                    }
             }
         }
-      },
-    
-        "geo": {
-            "type": "array"
-            "items": {
-                "type": "object",
-                "properties": {
-                    "id": {
-                        "type": "string"
-                   },
-                    "geo_name": {
-                        "type": "string"
-                   }
-                }   
-             }   
-        }
+
     }
 }
