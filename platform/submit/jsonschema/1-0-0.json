@@ -50,7 +50,6 @@
         },
         "expected_epc": {
             "type": "number"
-            "minimum": 0
         }
 
     }
