@@ -1,0 +1,70 @@
+{
+    "description": "schema for individual search criteria found under filter",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "campaign_search",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "search",
+    "properties": {
+        "vertical": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "vertical_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "country": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "country_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "features": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "features_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "refine": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "refine_type": {
+                        "type": "string" 
+                    },
+                    "value": {
+                        "type": "object",
+                        "properties": {
+                                "min": {
+                                    "type": "string"
+                                },
+                                "max": {
+                                    "type": "string"
+                                }
+                        }
+                    }
+                
+            }
+        }
+        
+    }
+}

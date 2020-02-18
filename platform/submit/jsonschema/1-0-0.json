@@ -1,0 +1,56 @@
+{
+    "description": "when user clicks submit application to run a campaign ",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "submit_application",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "submit",
+    "title": "campaign_click",
+    "properties": {
+        "campaign_name": {
+            "type": "string"
+        },
+        "campaign_id": {
+            "type": "string"
+        },
+        "vertical": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "vertical_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "country": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "country_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "features": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "features_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "expected_epc": {
+            "type": "number"
+        }
+
+    }
+}

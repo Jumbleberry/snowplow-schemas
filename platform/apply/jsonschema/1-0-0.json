@@ -1,0 +1,53 @@
+{
+    "description": "when user clicks to apply to run a campaign",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "apply_to_run",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "apply",
+    "properties": {
+        "campaign_name": {
+            "type": "string"
+        },
+        "campaign_id": {
+            "type": "string"
+        },
+        "vertical": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "vertical_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "country": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "country_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "features": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "features_name": {
+                        "type": "string" 
+                    }
+            }
+        }
+
+    }
+}
