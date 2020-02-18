@@ -6,8 +6,8 @@
         "format": "jsonschema",
         "version": "1-0-0"
     },
-    "type": "submit",
-    "title": "campaign_click",
+    "type": "object",
+    "title": "submit",
     "properties": {
         "campaign_name": {
             "type": "string"
