@@ -1,0 +1,34 @@
+{
+    "description": "when user exports csv from campaign-performance; https://alpha.jumbleberry.com/campaign/xxxx/performance",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "export_campaign",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "export_campaign",
+    "properties": {
+        "campaign": {
+            "type": "string"
+        },
+        "date_range": {
+            "type": "object",
+            "properties": {
+              "range_type": {
+                   "type": "string",
+                   "enum": [ "1D", "YD", "CW", "LW", "CM", "LM", "Custom"]
+              },
+              "start_date": {
+                   "type": "string",
+                   "format": "date"
+              },
+              "end_date": {
+                   "type": "string", 
+                   "format": "date"
+              }
+            }
+        }
+
+    }
+}
