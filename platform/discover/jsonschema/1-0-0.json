@@ -35,7 +35,7 @@
             "type": "object",
             "properties": {
                     "features_name": {
-                        "type": ["string", "null"]
+                        "type": ["string", "null"],
                         "enum": ["upsell", "straight_sale", "trial", "cpl"]
                     }
             }
@@ -44,7 +44,7 @@
             "type": "object",
             "properties": {
                     "refine_type": {
-                        "type": ["string", "null"]
+                        "type": ["string", "null"],
                         "enum": ["cpa", "bepc", "cap", "demand"]
                     },
                     "value": {
