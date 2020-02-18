@@ -18,11 +18,13 @@
               },
               "start_date": {
                    "description": "null if date range is custom"
-                   "type": ["string","null"]
+                   "type": ["string","null"],
+                   "format": "date"
               },
               "end_date": {
                    "description": "null if date range is custom"
-                   "type": ["string","null"]
+                   "type": ["string","null"],
+                   "format": "date"
               }
             }
         },
