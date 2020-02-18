@@ -44,7 +44,8 @@
                         "type": "string"                        
                     },
                     "features_name": {
-                        "type": "string" 
+                        "type": "string",
+                        "enum": ["upsell", "straight_sale", "trial", "cpl"]
                     }
             }
         },
