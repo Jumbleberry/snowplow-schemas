@@ -1,8 +1,8 @@
 {
-    "description": "schema for individual search criteria found under filter",
+    "description": "schema for individual search criteria found under Discover; https://alpha.jumbleberry.com/discover",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "campaign_search",
+        "name": "campaign_discover",
         "format": "jsonschema",
         "version": "1-0-0"
     },
@@ -13,10 +13,10 @@
             "type": "object",
             "properties": {
                     "id": {
-                        "type": "string"                        
+                        "type": ["string", "null"]
                     },
                     "vertical_name": {
-                        "type": "string" 
+                        "type": ["string", "null"]
                     }
             }
         },
@@ -24,32 +24,28 @@
             "type": "object",
             "properties": {
                     "id": {
-                        "type": "string"                        
+                        "type": ["string", "null"]
                     },
                     "country_name": {
-                        "type": "string" 
+                        "type": ["string", "null"]
                     }
             }
         },
         "features": {
             "type": "object",
             "properties": {
-                    "id": {
-                        "type": "string"                        
-                    },
                     "features_name": {
-                        "type": "string" 
+                        "type": ["string", "null"]
+                        "enum": ["upsell", "straight_sale", "trial", "cpl"]
                     }
             }
         },
         "refine": {
             "type": "object",
             "properties": {
-                    "id": {
-                        "type": "string"                        
-                    },
                     "refine_type": {
-                        "type": "string" 
+                        "type": ["string", "null"]
+                        "enum": ["cpa", "bepc", "cap", "demand"]
                     },
                     "value": {
                         "type": "object",
