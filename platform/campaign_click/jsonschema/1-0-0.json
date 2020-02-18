@@ -1,5 +1,5 @@
 {
-    "description": "when user clicks on a campaign",
+    "description": "when user clicks a campaign from the side(search) bar",
     "self": {
         "vendor": "com.jumbleberry",
         "name": "campaign_click",
