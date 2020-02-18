@@ -1,0 +1,53 @@
+{
+    "description": "when users click Filter-Report from https://alpha.jumbleberry.com/reporting/subid ",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "sub_id_report",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "sub id report",
+    "properties": {
+        "date_range": {
+            "type": "object",
+            "properties": {
+              "range_type": {
+                   "type": "string"
+                   "enum": [ "1D", "YD", "CW", "LW", "CM", "LM", "Custom"]
+              },
+              "start_date": {
+                   "description": "null if date range is custom"
+                   "type": ["string","null"]
+              },
+              "end_date": {
+                   "description": "null if date range is custom"
+                   "type": ["string","null"]
+              }
+            }
+        },
+        "campaign_filter": {
+            "type": ["string", "null"]
+        },
+        "groups": {
+            "type": "object",
+            "properties": {
+              "campaign":   {
+                     "type": "boolean"              
+              },
+              "Funnel": {
+                     "type": "boolean"              
+              },
+              "c1": {
+                     "type": "boolean"              
+              },
+              "c2": {
+                     "type": "boolean"              
+              },
+              "c3": {
+                     "type": "boolean"              
+              }
+            }
+       }
+  }
+}
