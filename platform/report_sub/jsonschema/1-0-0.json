@@ -13,16 +13,16 @@
             "type": "object",
             "properties": {
               "range_type": {
-                   "type": "string"
+                   "type": "string",
                    "enum": [ "1D", "YD", "CW", "LW", "CM", "LM", "Custom"]
               },
               "start_date": {
-                   "description": "null if date range is custom"
-                   "type": "string", "format": "date"
+                   "type": "string",
+                   "format": "date"
               },
               "end_date": {
-                   "description": "null if date range is custom"
-                   "type": "string", "format": "date"
+                   "type": "string", 
+                   "format": "date"
               }
             }
         },
