@@ -7,7 +7,7 @@
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "search",
+    "title": "discover",
     "properties": {
         "vertical": {
             "type": "object",
