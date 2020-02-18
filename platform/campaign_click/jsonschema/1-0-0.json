@@ -1,5 +1,5 @@
 {
-    "description": "when user clicks a campaign from the side(search) bar",
+    "description": "when user clicks a campaign from the side(search) bar or Discover (https://alpha.jumbleberry.com/discover)",
     "self": {
         "vendor": "com.jumbleberry",
         "name": "campaign_click",
@@ -14,6 +14,15 @@
         },
         "campaign_id": {
             "type": "string"
+        },
+        "featured_campaign": {
+            "type": "boolean"
+        },    
+        "recommended_campaign": {
+            "type": "boolean"
+        },        
+        "new_campaign": {
+            "type": "boolean"
         },
         "vertical": {
             "type": "object",
