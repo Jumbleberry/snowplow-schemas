@@ -2,12 +2,12 @@
     "description": "when user exports csv from dashboard ",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "export",
+        "name": "home_export",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "export",
+    "title": "home_export",
     "properties": {
         "date_range": {
             "type": "object",
