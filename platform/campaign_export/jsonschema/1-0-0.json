@@ -2,12 +2,12 @@
     "description": "when user exports csv from campaign-performance; https://alpha.jumbleberry.com/campaign/xxxx/performance",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "export_campaign",
+        "name": "campaign_export",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "export_campaign",
+    "title": "campaign_export",
     "properties": {
         "campaign": {
             "type": "string"
