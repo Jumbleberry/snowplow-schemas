@@ -2,12 +2,12 @@
     "description": "schema for individual search criteria found under Discover; https://alpha.jumbleberry.com/discover",
     "self": {
         "vendor": "com.jumbleberry",
-        "name": "campaign_discover",
+        "name": "filter",
         "format": "jsonschema",
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "discover",
+    "title": "filter",
     "properties": {
         "vertical": {
             "type": "object",
@@ -34,6 +34,9 @@
         "features": {
             "type": "object",
             "properties": {
+                    "id": {
+                       "type": "string"
+                    },
                     "features_name": {
                         "type": "string",
                         "enum": ["upsell", "straight_sale", "trial", "cpl"]
