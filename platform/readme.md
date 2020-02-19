@@ -4,9 +4,9 @@
 
 | Event Name | Event Description | Parameters | 
 | --- | --- | --- |
-| `Engagement` | When a key page is viewed prior to lead generation (ie. Bridge Page) | `c1`,<br/> `c2`,<br/> `c3` |
-`Lead` | When a user has shown interest in the product (ie. Post click) | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_category` |
-| `ViewContent` | When a key page is viewed such as a product page, e.g. landing on a product detail page | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
+| `home_export` | When a user clicks Export button from dashboard view | `range_type`,<br/> `start_date`,<br/> `end_date` |
+`campaign_export` | When a user clicks Export button from campaign-performance view | `range_type`,<br/> `start_date`,<br/> `end_date`|
+| `campaign_click` | When a campaign is viewed from search bar or Discover view | `campaign_name`,<br/> `campaign_id`,<br/> `featured_campaign`,<br/> `recommended_campaign`,<br/> `new_campaign`,<br/> `vertical_id`,<br/> `vertical_name`,<br/> `country_id`,<br/> `country_name`,<br/> `features_id`,<br/> `features_name` |
 `AddToCart` | When a product is added to the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
 `RemoveFromCart` | When a product is removed from the shopping cart, e.g. click on add to cart button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents` |
 `InitiateCheckout` | When a person enters the checkout flow prior to completing the checkout flow, e.g. click on checkout button | `value`,<br/> `currency`,<br/> `content_name`,<br/> `content_type`,<br/> `content_ids`,<br/> `contents`,<br/> `num_items` |
