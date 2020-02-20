@@ -9,7 +9,10 @@
     "type": "object",
     "title": "campaign_export",
     "properties": {
-        "campaign": {
+        "campaign_id": {
+            "type": "string"
+        },
+        "campaign_name": {
             "type": "string"
         },
         "date_range": {
