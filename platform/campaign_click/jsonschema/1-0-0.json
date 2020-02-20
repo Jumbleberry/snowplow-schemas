@@ -1,0 +1,63 @@
+{
+    "description": "when user clicks a campaign from the side(search) bar or Discover (https://alpha.jumbleberry.com/discover)",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "campaign_click",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "campaign_click",
+    "properties": {
+        "campaign_name": {
+            "type": "string"
+        },
+        "campaign_id": {
+            "type": "string"
+        },
+        "featured_campaign": {
+            "type": "boolean"
+        },    
+        "recommended_campaign": {
+            "type": "boolean"
+        },        
+        "new_campaign": {
+            "type": "boolean"
+        },
+        "verticals": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "vertical_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "countries": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "country_name": {
+                        "type": "string" 
+                    }
+            }
+        },
+        "features": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": "string"                        
+                    },
+                    "features_name": {
+                        "type": "string", 
+                        "enum": ["upsell", "straight_sale", "trial", "cpl"]
+                    }
+            }
+        }
+
+    }
+}

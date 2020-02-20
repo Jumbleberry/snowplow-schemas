@@ -1,0 +1,63 @@
+{
+    "description": "schema for individual search criteria found under Discover; https://alpha.jumbleberry.com/discover",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "filter",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "search",
+    "properties": {
+        "verticals": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": ["string", "null"]
+                    },
+                    "vertical_name": {
+                        "type": ["string", "null"]
+                    }
+            }
+        },
+        "countries": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                        "type": ["string", "null"]
+                    },
+                    "country_name": {
+                        "type": ["string", "null"]
+                    }
+            }
+        },
+        "features": {
+            "type": "object",
+            "properties": {
+                    "id": {
+                       "type": ["string", "null"]
+                    },
+                    "features_name": {
+                        "type": ["string", "null"],
+                        "enum": ["upsell", "straight_sale", "trial", "cpl"]
+                    }
+            }
+        },
+        "refine": {
+            "type": "object",
+            "properties": {
+                    "refine_type": {
+                        "type": ["string", "null"],
+                        "enum": ["cpa", "bepc", "cap", "demand"]
+                    },
+                     "min": {
+                        "type": ["string", "null"]
+                    },
+                     "max": {
+                        "type": ["string", "null"]
+                    }                
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "description": "when users click Filter-Report from https://alpha.jumbleberry.com/reporting/mtd ",
+    "self": {
+        "vendor": "com.jumbleberry",
+        "name": "campaign_report",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "title": "campaign_report",
+    "properties": {
+        "date_range": {
+            "type": "object",
+            "properties": {
+              "range_type": {
+                   "type": "string",
+                   "enum": [ "1D", "YD", "CW", "LW", "CM", "LM", "Custom"]
+              },
+              "start_date": {
+                   "type": "string",
+                   "format": "date"
+              },
+              "end_date": {
+                   "type": "string", 
+                   "format": "date"
+              }
+            }
+        },
+        "campaign_filter": {
+            "type": ["string", "null"]
+        }
+  }
+}
