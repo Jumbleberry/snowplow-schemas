@@ -50,7 +50,7 @@
             }
         },
         "expected_epc": {
-            "type": "number"
+            "type": "string"
         }
 
     }
