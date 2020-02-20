@@ -35,10 +35,10 @@
             "type": "object",
             "properties": {
                     "id": {
-                       "type": "string"
+                       "type": ["string", "null"]
                     },
                     "features_name": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "enum": ["upsell", "straight_sale", "trial", "cpl"]
                     }
             }
@@ -47,14 +47,14 @@
             "type": "object",
             "properties": {
                     "refine_type": {
-                        "type": "string",
+                        "type": ["string", "null"],
                         "enum": ["cpa", "bepc", "cap", "demand"]
                     },
                      "min": {
-                        "type": "string"
+                        "type": ["string", "null"]
                     },
                      "max": {
-                        "type": "string"
+                        "type": ["string", "null"]
                     }                
             }
         }
