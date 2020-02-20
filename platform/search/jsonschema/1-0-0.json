@@ -50,18 +50,12 @@
                         "type": "string",
                         "enum": ["cpa", "bepc", "cap", "demand"]
                     },
-                    "value": {
-                        "type": "object",
-                        "properties": {
-                                "min": {
-                                    "type": "string"
-                                },
-                                "max": {
-                                    "type": "string"
-                                }
-                        }
-                    }
-                
+                     "min": {
+                        "type": "string"
+                    },
+                     "max": {
+                        "type": "string"
+                    }                
             }
         }
         
