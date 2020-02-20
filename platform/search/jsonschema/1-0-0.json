@@ -7,9 +7,9 @@
         "version": "1-0-0"
     },
     "type": "object",
-    "title": "filter",
+    "title": "search",
     "properties": {
-        "vertical": {
+        "verticals": {
             "type": "object",
             "properties": {
                     "id": {
@@ -20,7 +20,7 @@
                     }
             }
         },
-        "country": {
+        "countries": {
             "type": "object",
             "properties": {
                     "id": {
